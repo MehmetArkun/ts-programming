@@ -8,6 +8,7 @@ employee1.work();
 Employee.payTaxes();
 
 //this is one difference between ts and js
+//
 
 let employee2 = new Employee("Omer", 40, 600);
 
