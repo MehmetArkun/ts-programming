@@ -1,4 +1,4 @@
-abstract class Shape {
+export abstract class Shape {
 
     // calculatePerimeter & calculateArea
 
@@ -9,7 +9,7 @@ abstract class Shape {
 }
 
 
-class Rectangle extends Shape{
+export class Rectangle extends Shape{
 
     public width !: number;
     public length !: number;
@@ -29,7 +29,7 @@ class Rectangle extends Shape{
     };
 }
 
-class Circle extends Shape{
+export class Circle extends Shape{
 
     public radius!: number;
     public pi = Math.PI;
@@ -48,7 +48,7 @@ class Circle extends Shape{
 
  }
 
-class Square extends Shape{
+export class Square extends Shape{
 
     public side !: number;
 
@@ -111,6 +111,6 @@ export class Cylinder extends Shape implements Volume{
      public calculateVolume(): number {
          return Math.PI * Math.pow(this.radius, 2) * this.height;
      }
-     
+
 }
 
